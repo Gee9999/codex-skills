@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proto Codebase Intelligence"
+  short_description: "Map Proto dependencies and investigate hard bugs safely"
+  default_prompt: "Use Proto codebase intelligence to map the relevant routes, dependencies, and regression-test seams."
