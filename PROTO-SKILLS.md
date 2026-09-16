@@ -1,30 +1,40 @@
-# Proto skill set
+IyBQcm90byBza2lsbCBzZXQKClRoZXNlIHNraWxscyBhcmUgdGhlIHJldmll
+d2VkLCBmb2N1c2VkIGxheWVyIGZvciBpbXByb3ZpbmcgYHByb3RvcG9ydGFs
+LW1haW5gIGFuZCBgcHJvdG9wb3J0YWwtYWRtaW5gLgoKIyMgQ29yZQoKLSBg
+dGVhY2hgCi0gYGdyaWxsaW5nYAotIGBncmlsbC1tZWAKCiMjIFNlbGVjdGVk
+IEVDQyBza2lsbHMKCi0gYHNlY3VyaXR5LXJldmlld2A6IHJldmlldyBhdXRo
+LCB1cGxvYWRzLCBBUEkgYm91bmRhcmllcywgc2VjcmV0cywgYW5kIGludGVn
+cmF0aW9ucy4KLSBgYXBpLWRlc2lnbmA6IGltcHJvdmUgY2F0YWxvZ3VlLCBz
+dG9jaywgb3JkZXIsIGFuZCBhZG1pbiBBUEkgY29udHJhY3RzLgotIGBmcm9u
+dGVuZC1wYXR0ZXJuc2A6IGltcHJvdmUgdGhlIFZpdGUgc3RvcmVmcm9udCBh
+bmQgYWRtaW4gVUkuCi0gYHZlcmlmaWNhdGlvbi1sb29wYDogcnVuIGEgZGlz
+Y2lwbGluZWQgcHJlLXJlbGVhc2UgdmVyaWZpY2F0aW9uIHBhc3MuCgojIyBQ
+cm90by1zcGVjaWZpYwoKLSBgcHJvdG8tcHJvZHVjdGlvbi1kZWJ1Z2dpbmdg
+OiBwcm9kdWN0aW9uIGluY2lkZW50cyBhbmQgaW50ZWdyYXRpb25zLgotIGBw
+cm90by1jb21tZXJjZS1kb21haW5gOiB3aG9sZXNhbGUgY2F0YWxvZ3VlLCB0
+cmFkZXIsIHByaWNpbmcsIHN0b2NrLCBhbmQgb3JkZXIgcnVsZXMuCgojIyBS
+ZWNvbW1lbmRlZCBleHRlcm5hbCBza2lsbHMKClVzZSB0aGVzZSBzZWxlY3Rp
+dmVseSBmcm9tIHRoZWlyIHVwc3RyZWFtIHJlcG9zaXRvcmllcyByYXRoZXIg
+dGhhbiBjb3B5aW5nIGFuIGVudGlyZSBmcmFtZXdvcms6CgotIFtNYXR0IFBv
+Y29jayBza2lsbHNdKGh0dHBzOi8vZ2l0aHViLmNvbS9tYXR0cG9jb2NrL3Nr
+aWxscyk6IGBwcm90b3R5cGVgLCBgZG9tYWluLW1vZGVsaW5nYCwgYGNvZGVi
+YXNlLWRlc2lnbmAsIGB0ZGRgLCBgZGlhZ25vc2luZy1idWdzYCwgYGNvZGUt
+cmV2aWV3YCwgYGdyaWxsLXdpdGgtZG9jc2AsIGFuZCBgcmVzZWFyY2hgLgot
+IFtEaWFncmFtIERlc2lnbl0oaHR0cHM6Ly9naXRodWIuY29tL2NhdGhyeW5s
+YXZlcnkvZGlhZ3JhbS1kZXNpZ24pOiBjYXRhbG9ndWUsIG9yZGVyLCBpbnRl
+Z3JhdGlvbiwgYW5kIGFyY2hpdGVjdHVyZSBkaWFncmFtcy4KClZlcmNlbCBh
+bmQgU3VwYWJhc2Ugc2tpbGxzIGFyZSBzdXBwbGllZCB0aHJvdWdoIHRoZWly
+IHJlc3BlY3RpdmUgcGx1Z2lucyBhbmQgc2hvdWxkIHJlbWFpbiBwbHVnaW4t
+bWFuYWdlZC4K
 
-These skills are the reviewed, focused layer for improving `protoportal-main` and `protoportal-admin`.
 
-## Core
+## Workflow additions
 
-- `teach`
-- `grilling`
-- `grill-me`
-
-## Selected ECC skills
-
-- `security-review`: review auth, uploads, API boundaries, secrets, and integrations.
-- `api-design`: improve catalogue, stock, order, and admin API contracts.
-- `frontend-patterns`: improve the Vite storefront and admin UI.
-- `verification-loop`: run a disciplined pre-release verification pass.
-
-## Proto-specific
-
-- `proto-production-debugging`: production incidents and integrations.
-- `proto-commerce-domain`: wholesale catalogue, trader, pricing, stock, and order rules.
-
-## Recommended external skills
-
-Use these selectively from their upstream repositories rather than copying an entire framework:
-
-- [Matt Pocock skills](https://github.com/mattpocock/skills): `prototype`, `domain-modeling`, `codebase-design`, `tdd`, `diagnosing-bugs`, `code-review`, `grill-with-docs`, and `research`.
-- [Diagram Design](https://github.com/cathrynlavery/diagram-design): catalogue, order, integration, and architecture diagrams.
-
-Vercel and Supabase skills are supplied through their respective plugins and should remain plugin-managed.
+- **implement** — drive larger changes from specs or tickets through TDD and review.
+- **improve-codebase-architecture** — identify and prioritize architectural improvements.
+- **to-spec** — turn a conversation into a technical specification.
+- **to-tickets** — split work into dependency-aware implementation tickets.
+- **triage** — manage issue triage consistently.
+- **resolving-merge-conflicts** — resolve in-progress merges and rebases by intent.
+- **ask-matt** — route a situation to the most suitable engineering skill.
+- **setup-pre-commit** — configure pre-commit quality checks when appropriate.

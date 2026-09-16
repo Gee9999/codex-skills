@@ -1,30 +1,32 @@
-# Portable Codex skills
+IyBQb3J0YWJsZSBDb2RleCBza2lsbHMKClRoaXMgYnVuZGxlIGNvbnRhaW5z
+IHRoZSBjb3JlIHNraWxscyBgdGVhY2hgLCBgZ3JpbGxpbmdgLCBhbmQgYGdy
+aWxsLW1lYCwgcGx1cyBQcm90by1zcGVjaWZpYyBza2lsbHMgZm9yIHByb2R1
+Y3Rpb24gcmVsaWFiaWxpdHkgYW5kIHdob2xlc2FsZSBjb21tZXJjZS4KCiMj
+IEluc3RhbGwKCmBgYGJhc2gKYmFzaCBpbnN0YWxsLnNoCmBgYAoKVGhlIGlu
+c3RhbGxlciBjb3BpZXMgdGhlIHNraWxscyBpbnRvIGAke0NPREVYX0hPTUU6
+LSRIT01FLy5jb2RleH0vc2tpbGxzYCBhbmQgd2lsbCBub3Qgb3ZlcndyaXRl
+IGV4aXN0aW5nIHNraWxscyB1bmxlc3MgYC0tZm9yY2VgIGlzIHN1cHBsaWVk
+LgoKIyMgU3luYyBiZXR3ZWVuIGNvbXB1dGVycwoKUHV0IHRoaXMgZGlyZWN0
+b3J5IGluIGEgcHJpdmF0ZSBHaXRIdWIgcmVwb3NpdG9yeS4gT24gdGhlIG90
+aGVyIGNvbXB1dGVyOgoKYGBgYmFzaApnaXQgY2xvbmUgPHByaXZhdGUtcmVw
+b3NpdG9yeS11cmw+IGNvZGV4LXNraWxscwpjZCBjb2RleC1za2lsbHMKYmFz
+aCBpbnN0YWxsLnNoCmBgYAoKQWZ0ZXIgdXBkYXRlcywgcnVuIGBnaXQgcHVs
+bGAgYW5kIHRoZW4gYGJhc2ggaW5zdGFsbC5zaCAtLWZvcmNlYC4KClRoZSBQ
+cm90by1zcGVjaWZpYyBza2lsbHMgYXJlIGRlbGliZXJhdGVseSBjdXJhdGVk
+IGluc3RlYWQgb2YgaW5zdGFsbGluZyBhIGZ1bGwgYWdlbnQgZnJhbWV3b3Jr
+LiBUaGV5IGVuY29kZSB0aGUgY3VycmVudCBuZWVkcyBvZiBgcHJvdG9wb3J0
+YWwtbWFpbmAgYW5kIGBwcm90b3BvcnRhbC1hZG1pbmAgd2l0aG91dCBjaGFu
+Z2luZyB0aGUgYWdlbnQncyBlbnRpcmUgb3BlcmF0aW5nIG1ldGhvZC4KCktl
+ZXAgY3JlZGVudGlhbHMsIEFQSSBrZXlzLCBgYXV0aC5qc29uYCwgYW5kIG1h
+Y2hpbmUtc3BlY2lmaWMgY29uZmlndXJhdGlvbiBvdXQgb2YgdGhpcyByZXBv
+c2l0b3J5LgoKCkVDQyBpcyBpbmNsdWRlZCBzZWxlY3RpdmVseSB1bmRlciBg
+ZWNjL2A6IGBzZWN1cml0eS1yZXZpZXdgLCBgYXBpLWRlc2lnbmAsIGBmcm9u
+dGVuZC1wYXR0ZXJuc2AsIGFuZCBgdmVyaWZpY2F0aW9uLWxvb3BgLiBUaGUg
+ZnVsbCBFQ0MgcnVudGltZSwgaG9va3MsIE1DUCBjb25maWd1cmF0aW9uLCBh
+Z2VudHMsIGFuZCBtZW1vcnkgc3lzdGVtIGFyZSBpbnRlbnRpb25hbGx5IGV4
+Y2x1ZGVkLgo=
 
-This bundle contains the core skills `teach`, `grilling`, and `grill-me`, plus Proto-specific skills for production reliability and wholesale commerce.
 
-## Install
+### Additional Matt Pocock workflow skills
 
-```bash
-bash install.sh
-```
-
-The installer copies the skills into `${CODEX_HOME:-$HOME/.codex}/skills` and will not overwrite existing skills unless `--force` is supplied.
-
-## Sync between computers
-
-Put this directory in a private GitHub repository. On the other computer:
-
-```bash
-git clone <private-repository-url> codex-skills
-cd codex-skills
-bash install.sh
-```
-
-After updates, run `git pull` and then `bash install.sh --force`.
-
-The Proto-specific skills are deliberately curated instead of installing a full agent framework. They encode the current needs of `protoportal-main` and `protoportal-admin` without changing the agent's entire operating method.
-
-Keep credentials, API keys, `auth.json`, and machine-specific configuration out of this repository.
-
-
-ECC is included selectively under `ecc/`: `security-review`, `api-design`, `frontend-patterns`, and `verification-loop`. The full ECC runtime, hooks, MCP configuration, agents, and memory system are intentionally excluded.
+The bundle also includes selected workflow skills for Proto: implementation orchestration, architecture improvement, specs, tickets, triage, merge-conflict resolution, skill routing, and pre-commit setup. These are vendored from the upstream [Matt Pocock skills repository](https://github.com/mattpocock/skills).

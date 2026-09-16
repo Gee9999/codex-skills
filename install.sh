@@ -1,38 +1,33 @@
-#!/usr/bin/env bash
-set -euo pipefail
+IyEvdXNyL2Jpbi9lbnYgYmFzaApzZXQgLWV1byBwaXBlZmFpbAoKZm9yY2U9
+MAppZiBbWyAiJHsxOi19IiA9PSAiLS1mb3JjZSIgXV07IHRoZW4gZm9yY2U9
+MTsgZmkKaWYgW1sgIiR7MTotfSIgIT0gIiIgJiYgIiR7MTotfSIgIT0gIi0t
+Zm9yY2UiIF1dOyB0aGVuCiAgZWNobyAiVXNhZ2U6IGJhc2ggaW5zdGFsbC5z
+aCBbLS1mb3JjZV0iID4mMgogIGV4aXQgMgpmaQoKYnVuZGxlX2Rpcj0iJChj
+ZCAiJChkaXJuYW1lICIke0JBU0hfU09VUkNFWzBdfSIpIiAmJiBwd2QpIgpz
+a2lsbHNfcm9vdD0iJHtDT0RFWF9IT01FOi0kSE9NRS8uY29kZXh9L3NraWxs
+cyIKbWtkaXIgLXAgIiRza2lsbHNfcm9vdCIKCmZvciBza2lsbCBpbiBncmls
+bGluZyBncmlsbC1tZSB0ZWFjaCBwcm90by1wcm9kdWN0aW9uLWRlYnVnZ2lu
+ZyBwcm90by1jb21tZXJjZS1kb21haW47IGRvCiAgc291cmNlX2Rpcj0iJGJ1
+bmRsZV9kaXIvJHNraWxsIgogIHRhcmdldF9kaXI9IiRza2lsbHNfcm9vdC8k
+c2tpbGwiCiAgaWYgW1sgLWUgIiR0YXJnZXRfZGlyIiAmJiAiJGZvcmNlIiAt
+bmUgMSBdXTsgdGhlbgogICAgZWNobyAiU2tpcHBpbmcgZXhpc3Rpbmcgc2tp
+bGw6ICRza2lsbCAodXNlIC0tZm9yY2UgdG8gcmVwbGFjZSkiCiAgICBjb250
+aW51ZQogIGZpCiAgbWtkaXIgLXAgIiR0YXJnZXRfZGlyIgogIGNwIC1SICIk
+c291cmNlX2Rpci8uIiAiJHRhcmdldF9kaXIvIgogIGVjaG8gIkluc3RhbGxl
+ZDogJHNraWxsIgpkb25lCgpmb3Igc2tpbGwgaW4gc2VjdXJpdHktcmV2aWV3
+IGFwaS1kZXNpZ24gZnJvbnRlbmQtcGF0dGVybnMgdmVyaWZpY2F0aW9uLWxv
+b3A7IGRvCiAgc291cmNlX2Rpcj0iJGJ1bmRsZV9kaXIvZWNjLyRza2lsbCIK
+ICB0YXJnZXRfZGlyPSIkc2tpbGxzX3Jvb3QvJHNraWxsIgogIGlmIFtbIC1l
+ICIkdGFyZ2V0X2RpciIgJiYgIiRmb3JjZSIgLW5lIDEgXV07IHRoZW4KICAg
+IGVjaG8gIlNraXBwaW5nIGV4aXN0aW5nIHNraWxsOiAkc2tpbGwgKHVzZSAt
+LWZvcmNlIHRvIHJlcGxhY2UpIgogICAgY29udGludWUKICBmaQogIG1rZGly
+IC1wICIkdGFyZ2V0X2RpciIKICBjcCAtUiAiJHNvdXJjZV9kaXIvLiIgIiR0
+YXJnZXRfZGlyLyIKICBlY2hvICJJbnN0YWxsZWQ6ICRza2lsbCIKZG9uZQpl
+Y2hvICJEb25lLiBSZXN0YXJ0IG9yIHJlbG9hZCBDb2RleCBpZiBuZWNlc3Nh
+cnkuIgo=
 
-force=0
-if [[ "${1:-}" == "--force" ]]; then force=1; fi
-if [[ "${1:-}" != "" && "${1:-}" != "--force" ]]; then
-  echo "Usage: bash install.sh [--force]" >&2
-  exit 2
-fi
-
-bundle_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-skills_root="${CODEX_HOME:-$HOME/.codex}/skills"
-mkdir -p "$skills_root"
-
-for skill in grilling grill-me teach proto-production-debugging proto-commerce-domain; do
-  source_dir="$bundle_dir/$skill"
-  target_dir="$skills_root/$skill"
-  if [[ -e "$target_dir" && "$force" -ne 1 ]]; then
-    echo "Skipping existing skill: $skill (use --force to replace)"
-    continue
-  fi
-  mkdir -p "$target_dir"
-  cp -R "$source_dir/." "$target_dir/"
-  echo "Installed: $skill"
+# Selected Matt Pocock workflow skills for Proto.
+for skill in implement improve-codebase-architecture to-spec to-tickets triage resolving-merge-conflicts ask-matt; do
+  install_skill "mattpocock/$skill"
 done
-
-for skill in security-review api-design frontend-patterns verification-loop; do
-  source_dir="$bundle_dir/ecc/$skill"
-  target_dir="$skills_root/$skill"
-  if [[ -e "$target_dir" && "$force" -ne 1 ]]; then
-    echo "Skipping existing skill: $skill (use --force to replace)"
-    continue
-  fi
-  mkdir -p "$target_dir"
-  cp -R "$source_dir/." "$target_dir/"
-  echo "Installed: $skill"
-done
-echo "Done. Restart or reload Codex if necessary."
+install_skill "mattpocock/setup-pre-commit"
