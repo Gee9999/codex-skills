@@ -1,0 +1,4 @@
+.DS_Store
+.env
+auth.json
+**/auth.json
