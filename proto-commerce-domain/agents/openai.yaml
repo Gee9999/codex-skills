@@ -1,0 +1,5 @@
+interface:
+  display_name: "Proto Commerce Domain"
+  short_description: "Model Proto's wholesale commerce rules"
+policy:
+  allow_implicit_invocation: false

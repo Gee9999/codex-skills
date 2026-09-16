@@ -1,0 +1,5 @@
+interface:
+  display_name: "Proto Production Debugging"
+  short_description: "Diagnose Proto production failures safely"
+policy:
+  allow_implicit_invocation: false

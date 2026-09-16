@@ -12,7 +12,7 @@ bundle_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 skills_root="${CODEX_HOME:-$HOME/.codex}/skills"
 mkdir -p "$skills_root"
 
-for skill in grilling grill-me teach; do
+for skill in grilling grill-me teach proto-production-debugging proto-commerce-domain; do
   source_dir="$bundle_dir/$skill"
   target_dir="$skills_root/$skill"
   if [[ -e "$target_dir" && "$force" -ne 1 ]]; then
