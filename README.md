@@ -27,6 +27,4 @@ The Proto-specific skills are deliberately curated instead of installing a full 
 Keep credentials, API keys, `auth.json`, and machine-specific configuration out of this repository.
 
 
-## Selected upstream skills
-
-The selected Matt Pocock skills are vendored under `mattpocock/` and installed by `install.sh`. Diagram Design is kept plugin-managed because it includes a large asset, reference, and script library; see `diagram-design/UPSTREAM.md`.
+ECC is included selectively under `ecc/`: `security-review`, `api-design`, `frontend-patterns`, and `verification-loop`. The full ECC runtime, hooks, MCP configuration, agents, and memory system are intentionally excluded.
