@@ -25,3 +25,8 @@ After updates, run `git pull` and then `bash install.sh --force`.
 The Proto-specific skills are deliberately curated instead of installing a full agent framework. They encode the current needs of `protoportal-main` and `protoportal-admin` without changing the agent's entire operating method.
 
 Keep credentials, API keys, `auth.json`, and machine-specific configuration out of this repository.
+
+
+## Selected upstream skills
+
+The selected Matt Pocock skills are vendored under `mattpocock/` and installed by `install.sh`. Diagram Design is kept plugin-managed because it includes a large asset, reference, and script library; see `diagram-design/UPSTREAM.md`.
